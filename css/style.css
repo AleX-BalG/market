@@ -72,40 +72,39 @@ body {
 .menu__item:hover .dropdown {
     margin-top: 10px;/* чуть отстыпа чтобы размытие фона не закрывало текст */
     display: block;/* чтобы при наведении появлялась */
-    background-color: aliceblue;/* */
-    box-shadow: 0px 0px 8px 10px aliceblue;/* */
+    background-color: aliceblue;/* задаем фон чтобы видно было */
+    box-shadow: 0px 0px 8px 10px aliceblue;/* для красоты и общей темы */
 }
 
 /* 010,010 */
 .menu__link,
 .dropdown__link {
-    display: block;/* */
-    text-decoration: none;/* */
-    font-size: 1.2rem;/* */
-    color: rgb(60, 80, 19); /* */
+    display: block;/* чтобы строчные элементы вели себя как блочные и выстраились в столбик */
+    text-decoration: none;/* убрать стандартный вид ссылки */
+    font-size: 1.2rem;/* шрифт в рэмах чтобы уджобней менять */
+    color: rgb(60, 80, 19); /* цвет шрифту в общую тему */
 }
 
 /* 010 */
 .wrapper {
-    width: 55%;/* */
-    margin: 0 auto;/* */
-    min-width: 20%;/* */
-    margin-top: 3%;/* */
-    padding: 2%;/* */
-    padding-left: 3%; /* */
+    width: 55%;/* ширину общую для всего контента */
+    margin: 0 auto;/* выставляем по центру */
+    min-width: 20%;/* минимальное сжатие чтоб совсем все в кашу не сжималось */
+    padding: 2%;/* небольшой отступ от края для красоты */
+    padding-left: 3%; /* чуть сместим вправо чтоб по уентру было */
 }
 
 /* 020 */
 .wrapper:after {
-  content: "";/* */
-  display: table;/* */
-  clear: both;/* */
+  content: "";/* ниже задавали оптикание, задаем видимость всему этому контенту */
+  display: table;/* запихиваем это все в табличный блок */
+  clear: both;/* заклининие "снятие невидимости" */
 }
 
 /* 010 */
 .wrapper__card {
-    float: left;/* */
-    width: 29%;/* */
+    float: left;/* оптикание по левому краю чтобы элементы встали в строки с переносом */
+    width: 29%;/* размер для карточек, адаптивная верстка как ни как  */
     margin: 2%;/* */
     padding: 1%;/* */
     border: 2px solid olive;/* */
@@ -114,8 +113,8 @@ body {
 
 /* 010 */
 .card__window {
-    width: 70%;/* */
-    margin: 0 auto;/* */
+    width: 70%;/* размекр для блока в которм картинка чтобы был чуть меньше карточки */
+    margin: 0 auto;/* выравнивание по центру*/
 }
 
 /* 001 */
@@ -135,12 +134,12 @@ body {
     padding: 5px;/* */
     margin: 5px;/* */
     font-size: 1rem;/* */
-    font-style: italic;/* */
+    font-style: italic;/* наклонный шрифт */
 }
 
 /* 030 */
 .wrapper__card:nth-child(3n-1) .body__description {
-    margin: 5px 5px 35.7px 5px;/* */
+    margin: 5px 5px 35.7px 5px;/* с размерами вышла разножоп... разлад короче, по скольку список цикличен подгоняем каджый по размееру */
 }
 
 /* 030 */
@@ -150,27 +149,27 @@ body {
 
 /* 010 */
 .card__sale_cotainer {
-    width: 100%;/* */
-    padding: 2%;/* */
+    width: 100%;/* задаем блоку всю ширину чтобы его обьекты разогнать по углам */
+    padding: 2%;/* отступ чтоб не совсем в угл */
 }
 
 /* 020 */
 .card__sale_cotainer:after {
-  content: "";/* */
+  content: "";/* чтобы снова родитель видел и отступы работали */
   display: table;/* */
   clear: both;/* */
 }
 
 /* 010 */
 .sale_cotainer__price {
-    float: left;/* */
+    float: left;/* цену в левый угол */
     margin-top: 15px;/* */
     width: 30%;/* */
 }
 
 /* 010 */
 .sale_cotainer__btn {
-    float: right;/* */
+    float: right;/* кнопку в правый */
     border: 1px solid olivedrab;/* */
     font-size: 1.2rem;/* */
     padding: 5px;/* */
