@@ -16,8 +16,8 @@ body {
 /* 020 */
 .header:after {
     content: '';/* чтобы родитель видел флоат элементы добавляем контент в псевдоэлемент и даем ему видимость*/
-    clear: both;/* */
-    display: table;/* */
+    clear: both;
+    display: table;
 }
 
 /* 010 */
@@ -34,7 +34,7 @@ body {
 .window__img { 
     width: 100%;/* чтоб картинка была на всю ширину */
  -o-object-fit: cover;/* задаем способ заполнения блока без изменений пропорций */
-    object-fit: cover;/* */
+    object-fit: cover;
 }
 
 /* 010 */
@@ -105,10 +105,10 @@ body {
 .wrapper__card {
     float: left;/* оптикание по левому краю чтобы элементы встали в строки с переносом */
     width: 29%;/* размер для карточек, адаптивная верстка как ни как  */
-    margin: 2%;/* */
-    padding: 1%;/* */
-    border: 2px solid olive;/* */
-    background-color: aliceblue;/* */
+    margin: 2%;
+    padding: 1%;
+    border: 2px solid olive;
+    background-color: aliceblue;
 }
 
 /* 010 */
@@ -120,20 +120,20 @@ body {
 /* 001 */
 .body__special,
 .sale_cotainer__special{
-    color: olivedrab;/* */
+    color: olivedrab;
 }
 
 /* 010 */
 .body__title {
-    margin: 5px;/* */
-    font: 1.1rem bold;/* */
+    margin: 5px;
+    font: 1.1rem bold;
 }
 
 /* 010 */
 .body__description {
-    padding: 5px;/* */
-    margin: 5px;/* */
-    font-size: 1rem;/* */
+    padding: 5px;
+    margin: 5px;
+    font-size: 1rem;
     font-style: italic;/* наклонный шрифт */
 }
 
@@ -144,7 +144,7 @@ body {
 
 /* 030 */
 .wrapper__card:nth-child(3n) .body__description {
-    margin: 5px 5px 41.5px 5px;/* */
+    margin: 5px 5px 41.5px 5px;
 }
 
 /* 010 */
@@ -156,23 +156,23 @@ body {
 /* 020 */
 .card__sale_cotainer:after {
   content: "";/* чтобы снова родитель видел и отступы работали */
-  display: table;/* */
-  clear: both;/* */
+  display: table;
+  clear: both;
 }
 
 /* 010 */
 .sale_cotainer__price {
     float: left;/* цену в левый угол */
-    margin-top: 15px;/* */
-    width: 30%;/* */
+    margin-top: 15px;
+    width: 30%;
 }
 
 /* 010 */
 .sale_cotainer__btn {
     float: right;/* кнопку в правый */
-    border: 1px solid olivedrab;/* */
-    font-size: 1.2rem;/* */
-    padding: 5px;/* */
-    color: rgb(0, 0, 0);/* */
-    background-color:olive;* */
+    border: 1px solid olivedrab;
+    font-size: 1.2rem;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    background-color:olive; 
 }
