@@ -1,0 +1,179 @@
+/* 001 */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/fon-olivki.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* 010 */
+.header {
+    margin: 0 auto; /* выравниваем блок с меню по центру*/
+    width: 90%;/* задаем ему ширину*/
+    font-size: 0;/*сбрасываем лишний отстум между пунктами меню */
+}
+
+/* 020 */
+.header:after {
+    content: '';/* чтобы родитель видел флоат элементы добавляем контент в псевдоэлемент и даем ему видимость*/
+    clear: both;/* */
+    display: table;/* */
+}
+
+/* 010 */
+.logo-wrap {
+    width: 9%;/* ставим ширину по душе */
+    float: left;/*  задаем выравнивание по левому краю*/
+    border-radius: 50%;/* чтоб красиво*/
+    background-color: aliceblue;/* слишком пёстро, надо выделить */
+    box-shadow: 0px 0px 16px 20px aliceblue;/* чтоб еще краше */
+}
+
+/* 010,010 */
+.logo,
+.window__img { 
+    width: 100%;/* чтоб картинка была на всю ширину */
+ -o-object-fit: cover;/* задаем способ заполнения блока без изменений пропорций */
+    object-fit: cover;/* */
+}
+
+/* 010 */
+.menu {
+    width: 90%;/* задаем ширину чтобы все элементы растянулись по ней */
+    float: left;/* чтобы все выровнилось по левому краю  */
+    background-color: aliceblue;/* для красоты */
+    box-shadow: 0px 0px 8px 10px aliceblue;/* чтоб совсем красиво*/
+}
+
+/* 010 */
+.dropdown {
+    position: absolute;/* чтобы когда всплывет доп. менюшка осенровная стояла как... как... чтоб стояла! */
+    display: none;/* чтоб не видно было что она там стоит */
+}
+
+/* 010,010 */
+.menu__item,
+.dropdown__item {
+    padding: 1% 6%;/* отступы чтобы растянуть пункты меню по экрану */
+    display: inline-block;/* чтобы пункты меню вели себя как блочно-строчные элементы */
+}
+
+/* 010 */
+.menu__item {
+    position: relative;/* всплывающие пункты созависомые относительно меню, тем самым они не сдвигают контент */
+}
+
+/* 020 */
+.menu__link:hover{
+    text-decoration: underline olive;/* по новедению нижнее подчеркивание, чтоб красиво */
+}
+
+/* 030 */
+.menu__item:hover .dropdown {
+    margin-top: 10px;/* чуть отстыпа чтобы размытие фона не закрывало текст */
+    display: block;/* чтобы при наведении появлялась */
+    background-color: aliceblue;/* */
+    box-shadow: 0px 0px 8px 10px aliceblue;/* */
+}
+
+/* 010,010 */
+.menu__link,
+.dropdown__link {
+    display: block;/* */
+    text-decoration: none;/* */
+    font-size: 1.2rem;/* */
+    color: rgb(60, 80, 19); /* */
+}
+
+/* 010 */
+.wrapper {
+    width: 55%;/* */
+    margin: 0 auto;/* */
+    min-width: 20%;/* */
+    margin-top: 3%;/* */
+    padding: 2%;/* */
+    padding-left: 3%; /* */
+}
+
+/* 020 */
+.wrapper:after {
+  content: "";/* */
+  display: table;/* */
+  clear: both;/* */
+}
+
+/* 010 */
+.wrapper__card {
+    float: left;/* */
+    width: 29%;/* */
+    margin: 2%;/* */
+    padding: 1%;/* */
+    border: 2px solid olive;/* */
+    background-color: aliceblue;/* */
+}
+
+/* 010 */
+.card__window {
+    width: 70%;/* */
+    margin: 0 auto;/* */
+}
+
+/* 001 */
+.body__special,
+.sale_cotainer__special{
+    color: olivedrab;/* */
+}
+
+/* 010 */
+.body__title {
+    margin: 5px;/* */
+    font: 1.1rem bold;/* */
+}
+
+/* 010 */
+.body__description {
+    padding: 5px;/* */
+    margin: 5px;/* */
+    font-size: 1rem;/* */
+    font-style: italic;/* */
+}
+
+/* 030 */
+.wrapper__card:nth-child(3n-1) .body__description {
+    margin: 5px 5px 35.7px 5px;/* */
+}
+
+/* 030 */
+.wrapper__card:nth-child(3n) .body__description {
+    margin: 5px 5px 41.5px 5px;/* */
+}
+
+/* 010 */
+.card__sale_cotainer {
+    width: 100%;/* */
+    padding: 2%;/* */
+}
+
+/* 020 */
+.card__sale_cotainer:after {
+  content: "";/* */
+  display: table;/* */
+  clear: both;/* */
+}
+
+/* 010 */
+.sale_cotainer__price {
+    float: left;/* */
+    margin-top: 15px;/* */
+    width: 30%;/* */
+}
+
+/* 010 */
+.sale_cotainer__btn {
+    float: right;/* */
+    border: 1px solid olivedrab;/* */
+    font-size: 1.2rem;/* */
+    padding: 5px;/* */
+    color: olivedrab;/* */
+    background-color: aliceblue;/* */
+}
